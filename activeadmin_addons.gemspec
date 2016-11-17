@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
   s.add_dependency "railties"
   s.add_dependency "select2-rails", "~> 3.5.9"
   s.add_dependency "xdan-datetimepicker-rails", "~> 2.5.1"
+  s.add_dependency "enumerize"
 
   s.add_development_dependency "rails", ">= 4"
   s.add_development_dependency "sqlite3"
@@ -29,7 +30,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency "guard", "~> 2.7.0"
   s.add_development_dependency "guard-rspec", "~> 4.3"
   s.add_development_dependency "capybara"
-  s.add_development_dependency "enumerize"
   s.add_development_dependency "paperclip"
   s.add_development_dependency "selenium-webdriver"
   s.add_development_dependency "poltergeist"

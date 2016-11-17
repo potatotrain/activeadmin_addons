@@ -20,6 +20,7 @@ PATH
   remote: .
   specs:
     activeadmin_addons (0.9.4)
+      enumerize
       railties
       select2-rails (~> 3.5.9)
       xdan-datetimepicker-rails (~> 2.5.1)
@@ -92,7 +93,7 @@ GEM
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
     diff-lcs (1.2.5)
-    enumerize (1.0.0)
+    enumerize (2.0.1)
       activesupport (>= 3.2)
     erubis (2.7.0)
     execjs (2.6.0)
@@ -277,7 +278,6 @@ DEPENDENCIES
   capybara
   database_cleaner
   devise
-  enumerize
   factory_girl_rails (= 4.4.0)
   guard (~> 2.7.0)
   guard-rspec (~> 4.3)
