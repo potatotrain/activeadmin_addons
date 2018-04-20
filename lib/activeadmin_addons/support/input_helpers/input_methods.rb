@@ -23,8 +23,12 @@ module ActiveAdminAddons
     end
 
     def method_model
-      object_class.reflect_on_association(association_name).try(:klass) ||
-        association_name.classify.constantize
+      if association_name == 'id'
+        object_class
+      else
+        object_class.reflect_on_association(association_name).try(:klass) ||
+          association_name.classify.constantize
+      end
     end
 
     def tableize_method
